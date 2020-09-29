@@ -1,0 +1,31 @@
+{
+    "name": "robotraconteur",
+    "displayName": "Robot Raconteur",
+    "description": "Robot Raconteur Service Definition Support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "robdef",
+            "aliases": ["Robot Raconteur Service Definition", "robdef"],
+            "extensions": [".robdef"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "robdef",
+            "scopeName": "source.robdef",
+            "path": "./syntaxes/robdef.tmLanguage.json"
+        }]
+    },
+    "author": "John Wason",
+    "license": "Apache-2.0",
+    "repository": {
+        "url": "https://github.com/robotraconteur/vscode-robotraconteur"
+    },
+    "icon": "logo-icon.png"
+}
